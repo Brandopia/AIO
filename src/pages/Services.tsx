@@ -319,7 +319,7 @@ const Services = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-sm sm:text-base md:text-lg lg:text-xl text-green-100 max-w-4xl mx-auto leading-relaxed px-4"
           >
-            All In One Residential and Home Services provides full-scope
+            All In One Residential and Home Services LLC provides full-scope
             property solutions — including interior repairs, cleaning, staging,
             lawn care, painting, exterior maintenance, and pressure washing.
             Whether you're a homeowner, investor, or Airbnb host, we keep your
