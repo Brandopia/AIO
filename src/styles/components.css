@@ -1,0 +1,12 @@
+
+@layer utilities {
+  /* Hero section gradients */
+  .hero-gradient {
+    background: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+  }
+
+  /* Stats section backgrounds */
+  .stats-bg {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  }
+}

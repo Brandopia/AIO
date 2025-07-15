@@ -1,0 +1,125 @@
+
+@tailwind base;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142.1 76.2% 36.3%;
+    --accent-foreground: 355.7 100% 97.3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142.1 76.2% 36.3%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  html {
+    scrollbar-width: none;
+  }
+
+  /* Ensure scrolling still works */
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Text styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
+  }
+
+  p, span, div, li, a {
+    @apply text-foreground;
+  }
+
+  /* Link styles */
+  a:not(.no-style) {
+    @apply text-foreground hover:text-primary;
+  }
+
+  /* Button text styles */
+  button {
+    @apply text-current;
+  }
+
+  /* Form elements */
+  input, textarea, select {
+    @apply bg-background text-foreground border-border;
+  }
+
+  input::placeholder, textarea::placeholder {
+    @apply text-muted-foreground;
+  }
+
+  /* Code blocks */
+  code, pre {
+    @apply bg-muted text-muted-foreground rounded px-1;
+  }
+
+  /* Lists */
+  ul, ol {
+    @apply text-foreground;
+  }
+
+  /* Tables */
+  table {
+    @apply text-foreground;
+  }
+
+  th, td {
+    @apply border-border;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}

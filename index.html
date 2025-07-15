@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      All In One Residential & Home Services - Managing Homes, Simplifying Lives
+    </title>
+    <meta
+      name="description"
+      content="All In One Residential & Home Services provides professional property management, cleaning, staging, lawn care, remodeling, and more. Serving Tampa Bay Area with excellence. Black-owned business."
+    />
+    <meta name="author" content="All In One Residential & Home Services LLC" />
+    <meta
+      name="keywords"
+      content="property management, residential services, home services, lawn care, cleaning, staging, remodeling, pressure washing, Tampa Bay, black-owned business, Airbnb management"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tanishka-property.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="All In One Residential & Home Services - Managing Homes, Simplifying Lives"
+    />
+    <meta
+      property="og:description"
+      content="Professional property management and home services in Tampa Bay Area. From cleaning to remodeling to lawn care — we handle it all."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tanishka-property.vercel.app/" />
+    <meta
+      property="og:image"
+      content="/assets/970b9dea-3c00-453a-840c-81040053e690.png"
+    />
+    <meta
+      property="og:site_name"
+      content="All In One Residential & Home Services"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="All In One Residential & Home Services - Managing Homes, Simplifying Lives"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional property management and home services in Tampa Bay Area. From cleaning to remodeling to lawn care — we handle it all."
+    />
+    <meta
+      name="twitter:image"
+      content="/assets/970b9dea-3c00-453a-840c-81040053e690.png"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/assets/970b9dea-3c00-453a-840c-81040053e690.png"
+      type="image/png"
+    />
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "All In One Residential & Home Services LLC",
+        "description": "Professional property management and home services for residential and commercial properties",
+        "url": "https://tanishka-property.vercel.app",
+        "logo": "/assets/970b9dea-3c00-453a-840c-81040053e690.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-727-861-9326",
+          "contactType": "customer service",
+          "availableLanguage": "English",
+          "hoursAvailable": "Mo-Fr 10:00-17:00"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Florida",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Sheneta Strong"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Tampa Bay Area"
+        }
+      }
+    </script>
+
+    <!-- Structured Data - Service -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Property Management and Home Services",
+        "description": "Comprehensive property management including interior services, lawn care, remodeling, staging, cleaning, painting, exterior services, and pressure washing",
+        "provider": {
+          "@type": "Organization",
+          "name": "All In One Residential & Home Services LLC"
+        },
+        "serviceType": "Property Management",
+        "areaServed": {
+          "@type": "Place",
+          "name": "Tampa Bay Area, Florida"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Home Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Interior Services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Lawn Services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Remodeling"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Staging & Cleaning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Painting & Pressure Washing"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Cal.com embed script -->
+    <script type="text/javascript">
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", { origin: "https://cal.com" });
+      Cal.ns["30min"]("ui", {
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
