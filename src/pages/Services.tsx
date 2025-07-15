@@ -222,18 +222,6 @@ const Services = () => {
       icon: <CheckCircle className="h-8 w-8 text-green-600" />,
     },
     {
-      title: "Licensed & Insured",
-      description:
-        "Peace of mind comes standard — we're licensed, insured, and serious about protecting your property and investment.",
-      icon: <CheckCircle className="h-8 w-8 text-green-600" />,
-    },
-    {
-      title: "Black-Owned & Operated",
-      description:
-        "Proudly Black-owned — bringing professionalism, purpose, and excellence to every job.",
-      icon: <CheckCircle className="h-8 w-8 text-green-600" />,
-    },
-    {
       title: "Built on Trust",
       description:
         "We treat your home like our own — respectful crew, clear communication, and no surprises.",
@@ -246,7 +234,7 @@ const Services = () => {
       name: "Jane Doe",
       role: "Residential Property Owner",
       content:
-        "All In One Residential & Home Services took care of my home like it was their own. From lawn care to cleaning, everything was professional and on time.",
+        "All In One Residential & commercial Services LLC took care of my home like it was their own. From lawn care to cleaning, everything was professional and on time.",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
       rating: 5,
     },
@@ -263,7 +251,7 @@ const Services = () => {
       role: "Airbnb Host",
       content:
         "The staging and cleaning services helped me get top reviews from guests. I couldn't be happier with their work!",
-      image: "https://images.unsplash.com/photo-1494790108755-2616c6dba9b4",
+      image: "/assets/image1.png",
       rating: 5,
     },
   ];

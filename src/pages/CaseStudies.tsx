@@ -8,14 +8,14 @@ import { useSEO } from "@/hooks/useSEO";
 const CaseStudies = () => {
   useSEO({
     title: "Case Studies - All In One Residential & Commercial Services",
-    description: "Real success stories and case studies showcasing our property management and home services results in Tampa Bay Area.",
-    keywords: "case studies, property management success, home services results, Tampa Bay, Airbnb staging, lawn care, commercial services"
+    description: "Real success stories and case studies showcasing our property management and commercial services results in Tampa Bay Area.",
+    keywords: "case studies, property management success, commercial services results, Tampa Bay, Airbnb staging, lawn care, commercial services"
   });
 
   const caseStudies = [
     {
       id: 1,
-      title: "Lawn & Exterior Renovation for Residential Client",
+      title: "Lawn & pressure washing for Residential Client",
       challenge: "Client's property had overgrown lawn and outdated exterior.",
       solution: "Comprehensive lawn services and pressure washing over 3 weeks.",
       result: "Property value improved, and client reported 30% increase in tenant inquiries within 2 months.",
@@ -35,9 +35,9 @@ const CaseStudies = () => {
     },
     {
       id: 3,
-      title: "Full Remodel & Property Management Setup",
-      challenge: "Client needed property remodeled and efficient tenant screening process established.",
-      solution: "Remodel completed on schedule; integrated tenant screening and rent collection services.",
+      title: "Property Management Setup",
+      challenge: "Client needed property management and efficient tenant screening process established.",
+      solution: "completed on schedule, integrated tenant screening and rent collection services.",
       result: "Reduced vacancy rate by 25% and improved rent payment timeliness.",
       icon: <TrendingUp className="h-8 w-8 text-green-600" />,
       metrics: ["25% vacancy reduction", "On-schedule completion", "Improved payment timeliness"],
@@ -85,7 +85,7 @@ const CaseStudies = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Real results from real clients. See how All In One Residential & Home Services has helped property owners achieve their goals.
+            Real results from real clients. See how All In One Residential & commercial Services LLC has helped property owners achieve their goals.
           </motion.p>
         </div>
       </section>

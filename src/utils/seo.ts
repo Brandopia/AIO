@@ -85,19 +85,19 @@ export const defaultSEO: SEOProps = {
   title:
     "All In One Residential & Commercial Services - Managing Homes, Simplifying Lives",
   description:
-    "All In One Residential & Commercial Services provides professional property management, cleaning, staging, lawn care, and more. Serving Tampa Bay Area with excellence. Black-owned business.",
+    "All In One Residential & Commercial Services provides professional property management, cleaning, staging, lawn care, and more. Serving Tampa Bay Area with excellence.",
   keywords:
-    "property management, residential services, home services, lawn care, cleaning, staging, commercial services, pressure washing, Tampa Bay, black-owned business, Airbnb management",
+    "property management, residential services, home services, lawn care, cleaning, staging, commercial services, pressure washing, Tampa Bay, Airbnb management",
   canonical: "https://tanishka-property.vercel.app/",
   ogTitle:
     "All In One Residential & Commercial Services - Managing Homes, Simplifying Lives",
   ogDescription:
-    "Professional property management and home services in Tampa Bay Area. From cleaning to lawn care to commercial services — we handle it all.",
+    "Professional property management and commercial services in Tampa Bay Area. From cleaning to lawn care to commercial services — we handle it all.",
   ogImage: "/assets/970b9dea-3c00-453a-840c-81040053e690.png",
   ogUrl: "https://tanishka-property.vercel.app/",
   twitterTitle:
     "All In One Residential & Commercial Services - Managing Homes, Simplifying Lives",
   twitterDescription:
-    "Professional property management and home services in Tampa Bay Area. From cleaning to lawn care to commercial services — we handle it all.",
+    "Professional property management and commercial services in Tampa Bay Area. From cleaning to lawn care to commercial services — we handle it all.",
   twitterImage: "/assets/970b9dea-3c00-453a-840c-81040053e690.png",
 };

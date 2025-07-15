@@ -11,9 +11,9 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "All In One Residential & Commercial Services - Tampa Bay Property Management & Home Services",
-    description: "Professional property management and home services in Tampa Bay. Interior services, lawn care, staging, cleaning, painting, and commercial services. One company for all your property needs.",
-    keywords: "property management, home services, commercial services, Tampa Bay, lawn care, staging, cleaning, painting, Airbnb management, residential services"
+    title: "All In One Residential & Commercial Services - Tampa Bay Property Management & commercial Services",
+    description: "Professional property management and commercial services in Tampa Bay. Interior services, lawn care, staging, cleaning, painting, and commercial services. One company for all your property needs.",
+    keywords: "property management, commercial services, commercial services, Tampa Bay, lawn care, staging, cleaning, painting, Airbnb management, residential services"
   });
 
   const statsRef = useRef(null);
@@ -70,9 +70,9 @@ const Index = () => {
     {
       name: "Jane Doe",
       role: "Residential Property Owner",
-      content: "All In One Residential & Home Services took care of my home like it was their own. From lawn care to remodeling, everything was professional and on time.",
+      content: "All In One Residential & commercial Services LLC took care of my home like it was their own. From lawn care to remodeling, everything was professional and on time.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616c6dba9b4?w=100&h=100&fit=crop&crop=face"
+      image: "/assets/image1.png"
     },
     {
       name: "Mark Smith",
@@ -246,7 +246,7 @@ const Index = () => {
               Complete Property Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              All In One Residential and Commercial Services provides full-scope property solutions — including interior repairs, cleaning, staging, lawn care, painting, exterior maintenance, and pressure washing.
+              All In One Residential and Commercial Services LLC provides full-scope property solutions — including interior repairs, cleaning, staging, lawn care, painting, exterior maintenance, and pressure washing.
             </p>
           </motion.div>
 
@@ -297,7 +297,7 @@ const Index = () => {
               Why Property Owners Choose All In One
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Black-Owned. Integrity-Driven. Community-Focused. We're proud to serve with heart, hustle, and the highest standards.
+              Integrity-Driven. Community-Focused. We're proud to serve with heart, hustle, and the highest standards.
             </p>
           </motion.div>
 

@@ -36,19 +36,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-green-100 leading-relaxed text-sm">
-              Professional property management and home services you can trust.
+              Professional property management and commercial services you can trust.
               Managing homes, simplifying lives with personalized care.
             </p>
-            <div className="flex space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <div
-                  key={i}
-                  className="w-5 h-5 bg-yellow-400 rounded-sm flex items-center justify-center"
-                >
-                  ⭐
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -138,7 +128,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mb-8">
             <p className="text-green-200 text-sm">
-              © 2024 All In One Residential & Commercial Services LLC. All
+              © 2025 All In One Residential & Commercial Services LLC. All
               rights reserved.
             </p>
           </div>
