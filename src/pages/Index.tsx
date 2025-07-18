@@ -11,7 +11,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "All In One Residential & Commercial Services - Tampa Bay Property Management & commercial Services",
+    title: "All In One Residential & Commercial Services LLC - Tampa Bay Property Management & commercial Services",
     description: "Professional property management and commercial services in Tampa Bay. Interior services, lawn care, staging, cleaning, painting, and commercial services. One company for all your property needs.",
     keywords: "property management, commercial services, commercial services, Tampa Bay, lawn care, staging, cleaning, painting, Airbnb management, residential services"
   });
@@ -39,7 +39,7 @@ const Index = () => {
     {
       icon: <Sparkles className="h-8 w-8 text-green-600" />,
       title: "Staging & Cleaning",
-      description: "Professional staging for sales and Airbnb rentals, plus thorough cleaning services"
+      description: "Professional staging for sales and Airbnb Rentals, plus thorough cleaning services"
     },
     {
       icon: <Paintbrush className="h-8 w-8 text-green-600" />,
@@ -52,12 +52,12 @@ const Index = () => {
     {
       icon: <TrendingUp className="h-8 w-8 text-green-600" />,
       title: "Everything You Need, All In One Place",
-      description: "From cleaning to remodeling to lawn care — we handle it all, so you don't have to juggle multiple contractors"
+      description: "From cleaning to to lawn care — we handle it all, so you don't have to juggle multiple contractors"
     },
     {
       icon: <Shield className="h-8 w-8 text-green-600" />,
       title: "Tailored for Your Property Goals",
-      description: "Whether it's your home, rental, or investment property — our services are built to fit your lifestyle and goals"
+      description: "Whether it's your home, Rental, or investment property — our services are built to fit your lifestyle and goals"
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-green-600" />,
@@ -70,7 +70,7 @@ const Index = () => {
     {
       name: "Jane Doe",
       role: "Residential Property Owner",
-      content: "All In One Residential & commercial Services LLC took care of my home like it was their own. From lawn care to remodeling, everything was professional and on time.",
+      content: "All In One Residential & commercial Services LLC took care of my home like it was their own. From lawn care to everything was professional and on time.",
       rating: 5,
       image: "/assets/image1.png"
     },

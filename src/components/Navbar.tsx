@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center space-x-3">
               <img
                 src="/assets/970b9dea-3c00-453a-840c-81040053e690.png"
-                alt="All In One Residential & Commercial Services"
+                alt="All In One Residential & Commercial Services LLC"
                 className="w-10 h-10 object-contain"
               />
               <div className="flex flex-col">

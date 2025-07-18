@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <img
                 src="/assets/970b9dea-3c00-453a-840c-81040053e690.png"
-                alt="All In One Residential & Commercial Services"
+                alt="All In One Residential & Commercial Services LLC"
                 className="w-10 h-10 object-contain"
               />
               <div className="flex flex-col">
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6">
-            <h3 className="font-bold text-xl text-green-200 border-b border-green-700 pb-2">
+            <h3 className="font-bold text-xl text-green-200 border-b border-green-700 pb-2 text-weight-bold">
               Our Services
             </h3>
             <ul className="space-y-3">

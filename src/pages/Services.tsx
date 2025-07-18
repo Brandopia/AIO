@@ -28,26 +28,26 @@ const Services = () => {
   // SEO optimization for Services page
   useSEO({
     title:
-      "Services We Provide | All In One Residential & Commercial Services - Tampa Bay",
+      "Services We Provide | All In One Residential & Commercial Services LLC - Tampa Bay",
     description:
       "Comprehensive home and commercial property services in Tampa Bay: Interior Services, Lawn Care, Staging, Cleaning, Painting, Exterior Services, and Pressure Washing. One-stop solution for homeowners, landlords, and Airbnb hosts.",
     keywords:
       "home services, property services, commercial services, lawn care, staging, cleaning, painting, pressure washing, Tampa Bay, Airbnb hosting, property management",
     canonical: "https://tanishka-property.vercel.app/services",
     ogTitle:
-      "Services We Provide | All In One Residential & Commercial Services",
+      "Services We Provide | All In One Residential & Commercial Services LLC",
     ogDescription:
       "Complete home and commercial property services in Tampa Bay. From interior upgrades to lawn care - we handle it all with one visit, one payment, one company.",
     ogUrl: "https://tanishka-property.vercel.app/services",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: "All In One Residential & Commercial Services",
+      name: "All In One Residential & Commercial Services LLC",
       description:
         "Comprehensive home and commercial property services including interior services, lawn care, staging, cleaning, painting, exterior services, and pressure washing.",
       provider: {
         "@type": "Organization",
-        name: "All In One Residential & Commercial Services",
+        name: "All In One Residential & Commercial Services LLC",
         address: {
           "@type": "PostalAddress",
           addressRegion: "FL",
@@ -65,127 +65,27 @@ const Services = () => {
   const services = [
     {
       icon: <Home className="h-10 w-10 text-green-600" />,
+      image: "/assets/istockphoto-1312450007-612x612.jpg", // Placeholder image, update as needed
       title: "Interior Services",
       description:
         "We offer a wide range of interior services to keep your property safe, stylish, and functional. From minor repairs to full upgrades, we ensure your spaces remain comfortable, clean, and up to standard — tailored for homeowners, landlords, or Airbnb hosts.",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Minor repairs to full upgrades",
-        "Property safety and functionality improvements",
-        "Comfortable and clean living spaces",
-        "Tailored for homeowners, landlords, and Airbnb hosts",
-        "Professional maintenance and upkeep",
+        "Cleaning",
+        "Minor Painting For Decor",
+        "Decorating",
+        "Staging",
       ],
     },
     {
-      icon: (
-        <div className="h-10 w-10 text-green-600 flex items-center justify-center text-2xl">
-          🌿
-        </div>
-      ),
-      title: "Lawn Services",
-      description:
-        "Our lawn care team handles everything from mowing, edging, and trimming to full landscape maintenance. We keep your yard healthy, manicured, and curb-appeal ready — whether it's a one-time clean-up or recurring service.",
-      image:
-        "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      features: [
-        "Mowing, edging, and trimming",
-        "Full landscape maintenance",
-        "Healthy, manicured yards",
-        "Curb-appeal ready properties",
-        "One-time clean-up or recurring service",
-      ],
-    },
-    {
-      icon: (
-        <div className="h-10 w-10 text-green-600 flex items-center justify-center text-2xl">
-          🏠
-        </div>
-      ),
-      title: "Staging (Airbnb's Included)",
-      description:
-        "We specialize in staging homes for sale and Airbnb rentals — turning empty spaces into warm, welcoming environments that boost bookings and sales. We provide furnishings, decor, and layout optimization to make your property photo-ready and guest-friendly.",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      features: [
-        "Home staging for sales",
-        "Airbnb rental optimization",
-        "Furnishings and decor provided",
-        "Layout optimization",
-        "Photo-ready and guest-friendly spaces",
-      ],
-    },
-    {
-      icon: (
-        <div className="h-10 w-10 text-green-600 flex items-center justify-center text-2xl">
-          ✨
-        </div>
-      ),
-      title: "Cleaning Services",
-      description:
-        "We offer thorough cleaning services for move-ins, move-outs, deep cleans, and routine upkeep. Our reliable team ensures each space is spotless and sanitized — perfect for landlords, Airbnb hosts, or busy homeowners.",
-      image:
-        "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      features: [
-        "Move-in and move-out cleaning",
-        "Deep cleaning services",
-        "Routine upkeep and maintenance",
-        "Spotless and sanitized spaces",
-        "Perfect for landlords and Airbnb hosts",
-      ],
-    },
-    {
-      icon: <PaintRoller className="h-10 w-10 text-green-600" />,
-      title: "Painting",
-      description:
-        "Professional interior and exterior painting services that refresh your property and protect surfaces long-term. We use high-quality paints, prep surfaces properly, and deliver crisp, clean results every time.",
-      image:
-        "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      features: [
-        "Interior and exterior painting",
-        "High-quality paints and materials",
-        "Proper surface preparation",
-        "Long-term protection",
-        "Crisp, clean professional results",
-      ],
-    },
-    {
-      icon: (
-        <div className="h-10 w-10 text-green-600 flex items-center justify-center text-2xl">
-          🏡
-        </div>
-      ),
+      icon: <Wrench className="h-10 w-10 text-green-600" />,
+      image: "/assets/shutterstock_553152238.jpg",
       title: "Exterior Services",
       description:
         "From siding repairs to outdoor touch-ups, our exterior services help protect your investment and maintain a polished look. We inspect and fix damage, handle upkeep, and boost your property's appearance.",
-      image:
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       features: [
-        "Siding repairs and maintenance",
-        "Outdoor touch-ups and improvements",
-        "Investment protection services",
-        "Property appearance enhancement",
-        "Damage inspection and repair",
-      ],
-    },
-    {
-      icon: (
-        <div className="h-10 w-10 text-green-600 flex items-center justify-center text-2xl">
-          💧
-        </div>
-      ),
-      title: "Pressure Washing",
-      description:
-        "We remove dirt, grime, mold, and mildew from driveways, siding, decks, fences, and patios. Our pressure washing restores curb appeal and extends the life of your property's surfaces.",
-      image:
-        "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      features: [
-        "Driveways, siding, and decks",
-        "Fences and patios",
-        "Dirt, grime, mold, and mildew removal",
-        "Curb appeal restoration",
-        "Surface life extension",
+        "Lawn Services",
+        "Pressure Washing Services",
+        "Windows, Roofs, Driveways, Houses or Buildings",
       ],
     },
   ];
@@ -218,7 +118,7 @@ const Services = () => {
     {
       title: "Airbnb & Investor Friendly",
       description:
-        "We understand the short-term rental space — cleaning, staging, and turnover-ready setups are handled professionally and on time.",
+        "We understand the short-term Rental space — cleaning, staging, and turnover-ready setups are handled professionally and on time.",
       icon: <CheckCircle className="h-8 w-8 text-green-600" />,
     },
     {
@@ -352,63 +252,37 @@ const Services = () => {
             </motion.p>
           </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={containerVariants}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8"
-          >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {services.map((service, index) => (
-              <motion.div key={index} variants={itemVariants}>
-                <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 h-full">
-                  <CardContent className="p-0">
-                    <div className="relative h-48 md:h-56 overflow-hidden rounded-t-lg">
-                      <Suspense
-                        fallback={
-                          <div className="w-full h-full bg-gray-200 dark:bg-gray-700 animate-pulse" />
-                        }
-                      >
-                        <OptimizedImage
-                          src={service.image}
-                          alt={service.title}
-                          width={400}
-                          height={250}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </Suspense>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-                    <div className="p-6 md:p-8 lg:p-10">
-                      <div className="flex items-start space-x-4 md:space-x-6 mb-5 md:mb-8">
-                        <div className="flex-shrink-0 p-2 md:p-3 bg-green-100 dark:bg-green-900 rounded-xl group-hover:bg-green-200 dark:group-hover:bg-green-800 transition-colors duration-300">
-                          {service.icon}
-                        </div>
-                        <div>
-                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3 group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors duration-300">
-                            {service.title}
-                          </h3>
-                          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-                            {service.description}
-                          </p>
-                        </div>
-                      </div>
-                      <ul className="space-y-2 md:space-y-4">
-                        {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 md:mr-4 mt-1 flex-shrink-0" />
-                            <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
-                              {feature}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
+              <Card key={index} className="h-full border-0 shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+                <CardContent className="p-8 md:p-10 lg:p-12">
+                  <div className="relative h-60 w-full mb-6 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="object-cover w-full h-full"
+                      style={{ maxHeight: '240px' }}
+                    />
+                  </div>
+                  <div className="flex items-center mb-4">{service.icon}</div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg mb-6">{service.description}</p>
+                  <ul className="space-y-4">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg md:text-xl">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -513,7 +387,7 @@ const Services = () => {
                   "Single-family homes",
                   "Duplexes",
                   "Small multi-family properties",
-                  "Airbnb & short-term rentals",
+                  "Airbnb & short-term Rentals",
                   "Residential investment properties",
                   "Commercial properties (expanding)",
                 ].map((type, index) => (

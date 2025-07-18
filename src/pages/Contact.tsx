@@ -69,7 +69,7 @@ const Contact = () => {
     },
     {
       question: "Do you work with Airbnb properties?",
-      answer: "Yes! We specialize in Airbnb and short-term rental properties, offering staging, cleaning, and turnover services."
+      answer: "Yes! We specialize in Airbnb and short-term Rental properties, offering staging, cleaning, and turnover services."
     }
   ];
 
@@ -241,7 +241,6 @@ const Contact = () => {
                         <SelectItem value="cleaning">Cleaning</SelectItem>
                         <SelectItem value="staging">Staging (Airbnb's Included)</SelectItem>
                         <SelectItem value="painting">Painting</SelectItem>
-                        <SelectItem value="remodeling">Remodeling</SelectItem>
                         <SelectItem value="pressure-washing">Pressure Washing</SelectItem>
                         <SelectItem value="other">Other (please specify in message)</SelectItem>
                       </SelectContent>

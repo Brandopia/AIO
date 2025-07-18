@@ -7,7 +7,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 const CaseStudies = () => {
   useSEO({
-    title: "Case Studies - All In One Residential & Commercial Services",
+    title: "Case Studies - All In One Residential & Commercial Services LLC",
     description: "Real success stories and case studies showcasing our property management and commercial services results in Tampa Bay Area.",
     keywords: "case studies, property management success, commercial services results, Tampa Bay, Airbnb staging, lawn care, commercial services"
   });

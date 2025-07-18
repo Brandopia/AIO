@@ -14,7 +14,7 @@ import { useSEO } from "@/hooks/useSEO";
 
 const About = () => {
   useSEO({
-    title: "About Us - All In One Residential & Commercial Services",
+    title: "About Us - All In One Residential & Commercial Services LLC",
     description:
       "Meet Sheneta Strong, CEO of All In One Residential & Commercial Services LLC. Learn about our mission, values, and commitment to professional property management in Tampa Bay Area.",
     keywords:
@@ -99,7 +99,7 @@ const About = () => {
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
                 <img
                   src="/assets/6ba07ab8-92cd-4adb-8555-9d41d8b57cbd.png"
-                  alt="Sheneta Strong, CEO of All In One Residential & Commercial Services"
+                  alt="Sheneta Strong, CEO of All In One Residential & Commercial Services LLC"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -120,7 +120,7 @@ const About = () => {
               property management services with a personal touch.
             </p>
             <p className="mb-6">
-              All In One Residential & Commercial Services was founded with a
+              All In One Residential & Commercial Services LLC was founded with a
               simple vision: to make property management easier for everyone. We
               understand that managing properties can be overwhelming, which is
               why we created a comprehensive solution that handles all your
