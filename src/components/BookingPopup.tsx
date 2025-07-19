@@ -60,8 +60,8 @@ const BookingPopup = () => {
               <div className="space-y-3">
                 <Button 
                   className="w-full bg-green-600 hover:bg-green-700"
-                  data-cal-link="thespider/30min"
-                  data-cal-namespace="30min"
+                  data-cal-link="ecosystem/1-hr-meeting"
+                  data-cal-namespace="1-hr-meeting"
                   data-cal-config='{"layout":"month_view"}'
                   onClick={handleClose}
                 >

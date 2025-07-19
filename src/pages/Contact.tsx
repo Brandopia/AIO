@@ -22,24 +22,68 @@ const Contact = () => {
     contactMethod: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent Successfully!",
-      description: "Thanks for booking! We'll reach out before your scheduled time.",
-    });
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      propertyAddress: "",
-      serviceType: "",
-      propertyOccupied: "",
-      timeline: "",
-      message: "",
-      contactMethod: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbw_Wz3veJLEFDCane6ahOiG8rcHFO6nS6cJoQtDFFSZ7WSEAt75G7wZCOG0V0p_-_fdsA/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(
+          Object.fromEntries(
+            Object.entries(formData).map(([key, value]) => [key, String(value)])
+          )
+        ).toString(),
+      });
+
+      const resultText = await response.text();
+      console.log("Raw response text from Apps Script:", resultText);
+
+      let result;
+      try {
+        result = JSON.parse(resultText);
+      } catch (err) {
+        console.error("Failed to parse JSON:", err);
+        throw new Error("Invalid JSON returned from Google Apps Script");
+      }
+
+      if (result.result === "success") {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "We'll reach out within 24 hours to discuss your property needs.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          propertyAddress: "",
+          serviceType: "",
+          propertyOccupied: "",
+          timeline: "",
+          message: "",
+          contactMethod: ""
+        });
+      } else {
+        throw new Error(
+          typeof result.error === "object" ? JSON.stringify(result.error) : result.error || "Failed to submit form"
+        );
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error sending your message. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -88,8 +132,8 @@ const Contact = () => {
             <Button 
               size="lg" 
               className="bg-white text-green-900 hover:bg-gray-100 text-lg px-8 py-3"
-              data-cal-link="thespider/30min"
-              data-cal-namespace="30min"
+              data-cal-link="ecosystem/1-hr-meeting"
+              data-cal-namespace="1-hr-meeting"
               data-cal-config='{"layout":"month_view"}'
             >
               <Calendar className="mr-2 h-5 w-5" />
@@ -287,8 +331,13 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-green-600 hover:bg-green-700">
-                    Send Message
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full bg-green-600 hover:bg-green-700"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>

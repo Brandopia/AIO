@@ -49,8 +49,8 @@ const GoToTop = () => {
             size="icon"
             className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg rounded-full w-12 h-12"
             aria-label="Book meeting"
-            data-cal-link="thespider/30min"
-            data-cal-namespace="30min"
+            data-cal-link="ecosystem/1-hr-meeting"
+            data-cal-namespace="1-hr-meeting"
             data-cal-config='{"layout":"month_view"}'
           >
             <Calendar className="h-6 w-6" />

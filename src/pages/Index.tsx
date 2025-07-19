@@ -186,8 +186,8 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-white text-green-900 hover:bg-gray-100 text-lg px-8 py-3 btn-primary"
-                  data-cal-link="thespider/30min"
-                  data-cal-namespace="30min"
+                  data-cal-link="ecosystem/1-hr-meeting"
+                  data-cal-namespace="1-hr-meeting"
                   data-cal-config='{"layout":"month_view"}'
                 >
                   Book Consultation
@@ -468,8 +468,8 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-white text-green-900 hover:bg-gray-100 text-lg px-8 py-3 btn-primary"
-              data-cal-link="thespider/30min"
-              data-cal-namespace="30min"
+              data-cal-link="ecosystem/1-hr-meeting"
+              data-cal-namespace="1-hr-meeting"
               data-cal-config='{"layout":"month_view"}'
             >
               Schedule Your Consultation

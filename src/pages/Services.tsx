@@ -515,7 +515,7 @@ const Services = () => {
                 size="lg"
                 asChild
                 className="bg-white text-green-900 hover:bg-gray-100 text-lg px-10 py-4"
-                data-cal-link="sheneta-strong-all-in-one-residential-home-services/30min"
+                data-cal-link="ecosystem/1-hr-meeting"
                 data-cal-config='{"layout":"month_view"}'
               >
                 <span>Book Your Free Consultation</span>

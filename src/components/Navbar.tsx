@@ -80,8 +80,8 @@ const Navbar = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 className="bg-green-600 hover:bg-green-700"
-                data-cal-link="thespider/30min"
-                data-cal-namespace="30min"
+                data-cal-link="ecosystem/1-hr-meeting"
+                data-cal-namespace="1-hr-meeting"
                 data-cal-config='{"layout":"month_view"}'
               >
                 Book Free Consultation
@@ -143,8 +143,8 @@ const Navbar = () => {
               ))}
               <Button
                 className="w-full mt-2 bg-green-600 hover:bg-green-700"
-                data-cal-link="thespider/30min"
-                data-cal-namespace="30min"
+                data-cal-link="ecosystem/1-hr-meeting"
+                data-cal-namespace="1-hr-meeting"
                 data-cal-config='{"layout":"month_view"}'
                 onClick={() => setIsOpen(false)}
               >
